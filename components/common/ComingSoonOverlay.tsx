@@ -98,11 +98,7 @@ export function ComingSoonOverlay({ locale }: ComingSoonOverlayProps) {
       }}
       dir={isArabic ? 'rtl' : 'ltr'}
     >
-      {/* Decorative ambient background glows */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl pointer-events-none animate-pulse" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none animate-pulse delay-1000" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
-
+  
       {/* Main Glassmorphic Modal / Card */}
       <div className="relative w-full max-w-2xl bg-white/[0.08] backdrop-blur-2xl border border-white/20 rounded-3xl p-6 sm:p-10 md:p-12 shadow-[0_25px_70px_rgba(0,0,0,0.6)] text-center text-white overflow-hidden my-auto">
         {/* Subtle top edge gradient highlight */}
@@ -125,12 +121,11 @@ export function ComingSoonOverlay({ locale }: ComingSoonOverlayProps) {
 
         {/* Tag Pill */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-500/20 to-cyan-500/20 border border-teal-400/30 text-teal-200 text-xs sm:text-sm font-semibold uppercase tracking-wider mb-4">
-          <Sparkles className="w-3.5 h-3.5" />
           <span>{isArabic ? 'قريباً إن شاء الله' : 'Coming Very Soon'}</span>
         </div>
 
         {/* Brand Name Title */}
-        <h1 className="text-2xl sm:text-3xl md:text-4xl leading-relaxed font-black tracking-tight mb-2">
+        <h1 className="text-xl sm:text-2xl md:text-2xl leading-relaxed font-black tracking-tight mb-2">
           <span className="bg-gradient-to-r from-teal-100 via-cyan-300 to-emerald-100 bg-clip-text text-transparent drop-shadow-md">
             {isArabic ? 'نظافة لبيتك، وعناية بجمالك' : 'A cleaner home. A little more self-care.'}
           </span>
