@@ -32,7 +32,7 @@ const noto = Noto_Sans_Arabic({
 
 export const metadata: Metadata = {
   title: 'El Baraka | Coming Soon - قريباً',
-  description: 'El Baraka - Official Online Store Coming Soon',
+  description: 'البركة للمنظفات ومستحضرات التجميل والعناية الشخصية — قريباً | El Baraka: household cleaners, cosmetics & personal care. Coming soon.',
 };
 
 interface LayoutProps {
